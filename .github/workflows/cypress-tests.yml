@@ -1,0 +1,36 @@
+name: Cypress E2E Tests
+
+on:
+  workflow_dispatch:      # lancement manuel
+  push:                   # optionnel : à chaque push sur main
+    branches: [ "main" ]
+
+jobs:
+  cypress-run:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run Cypress tests
+        run: |
+          npx cypress run
+        env:
+          # tes variables d'env app si besoin
+          CYPRESS_BASE_URL: ${{ secrets.CYPRESS_BASE_URL }}
+
+      - name: Archive JUnit results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: junit-results
+          path: reports/junit/**/*.xml
