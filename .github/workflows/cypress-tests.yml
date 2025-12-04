@@ -25,8 +25,8 @@ jobs:
         run: |
           npx cypress run
         env:
-          # tes variables d'env app si besoin
-          CYPRESS_BASE_URL: ${{ secrets.CYPRESS_BASE_URL }}
+          # tes variables d'env app si besoin 
+          CYPRESS_BASE_URL: ${{ secrets.CYPRESS_BASE_URL || 'http://localhost:3000' }}
 
       - name: Archive JUnit results
         if: always()
