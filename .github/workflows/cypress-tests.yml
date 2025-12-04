@@ -1,13 +1,17 @@
 name: Cypress E2E Tests
 
 on:
-  workflow_dispatch:      # lancement manuel
-  push:                   # optionnel : à chaque push sur main
+  workflow_dispatch:
+  push:
     branches: [ "main" ]
 
 jobs:
   cypress-run:
     runs-on: ubuntu-latest
+
+    env:
+      # Make the secret available to all steps
+      CYPRESS_BASE_URL: ${{ secrets.CYPRESS_BASE_URL }}
 
     steps:
       - name: Checkout repository
@@ -21,12 +25,14 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Run Cypress tests
+      - name: Check base URL reachability
         run: |
-          npx cypress run
-        env:
-          # tes variables d'env app si besoin
-          CYPRESS_BASE_URL: ${{ secrets.CYPRESS_BASE_URL }}
+          echo "Checking reachability of $CYPRESS_BASE_URL"
+          # -k is optional, only if you have self-signed certs
+          curl -v --fail "$CYPRESS_BASE_URL" || (echo "❌ URL not reachable from GitHub runner" && exit 1)
+
+      - name: Run Cypress tests
+        run: npx cypress run
 
       - name: Archive JUnit results
         if: always()
