@@ -25,7 +25,7 @@ jobs:
         run: |
           npx cypress run
         env:
-          # tes variables d'env app si besoin 
+          # tes variables d'env app si besoin
           CYPRESS_BASE_URL: ${{ secrets.CYPRESS_BASE_URL }}
 
       - name: Archive JUnit results
