@@ -1,5 +1,5 @@
 {
-  "name": "teste-orange-hrm",
+  "name": "Teste-Orange-HRM",
   "version": "1.0.0",
   "description": " No contexto específico do OrangeHRM, a automação de testes pode ser utilizada para validar a funcionalidade do sistema em diferentes cenários, como login de usuário, gestão de perfis, gestão de folha de pagamento, entre outros.",
   "main": "index.js",
