@@ -24,7 +24,9 @@ jobs:
       - name: Run Cypress tests
         run: |
           npx cypress run
-        
+        env:
+          # tes variables d'env app si besoin
+          CYPRESS_BASE_URL: 'https://opensource-demo.orangehrmlive.com/'
 
       - name: Archive JUnit results
         if: always()
