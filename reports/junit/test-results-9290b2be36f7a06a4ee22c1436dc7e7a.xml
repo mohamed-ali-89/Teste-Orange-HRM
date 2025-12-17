@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="12.917" tests="1" failures="0">
+  <testsuite name="Root Suite" timestamp="2025-12-17T10:44:03" tests="0" file="cypress\e2e\orange-hrm\UserManagement.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Gerenciamento de Usuários" timestamp="2025-12-17T10:44:03" tests="1" time="12.897" failures="0">
+    <testcase name="Gerenciamento de Usuários Deve procurar usuario do sistema por Status" time="5.969" classname="Deve procurar usuario do sistema por Status">
+    </testcase>
+  </testsuite>
+</testsuites>

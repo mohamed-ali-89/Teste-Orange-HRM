@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="32.835" tests="6" failures="0">
+  <testsuite name="Root Suite" timestamp="2025-12-17T10:42:59" tests="0" file="cypress\e2e\orange-hrm\Form.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Validação de campos obrigatórios " timestamp="2025-12-17T10:42:59" tests="6" time="32.825" failures="0">
+    <testcase name="Validação de campos obrigatórios  Deve exibir mensagem de erro &quot;Required&quot; para o campo &quot;User Role&quot;" time="5.758" classname="Deve exibir mensagem de erro &quot;Required&quot; para o campo &quot;User Role&quot;">
+    </testcase>
+    <testcase name="Validação de campos obrigatórios  Deve exibir mensagem de erro &quot;Required&quot; para o campo &quot;Employee Name&quot;" time="4.782" classname="Deve exibir mensagem de erro &quot;Required&quot; para o campo &quot;Employee Name&quot;">
+    </testcase>
+    <testcase name="Validação de campos obrigatórios  Deve exibir mensagem de erro &quot;Required&quot; para o campo &quot;Status&quot;" time="4.924" classname="Deve exibir mensagem de erro &quot;Required&quot; para o campo &quot;Status&quot;">
+    </testcase>
+    <testcase name="Validação de campos obrigatórios  Deve exibir mensagem de erro &quot;Required&quot; para o campo &quot;Username&quot;" time="4.734" classname="Deve exibir mensagem de erro &quot;Required&quot; para o campo &quot;Username&quot;">
+    </testcase>
+    <testcase name="Validação de campos obrigatórios  Deve exibir mensagem de erro &quot;Required&quot; para o campo &quot;Password&quot;" time="4.863" classname="Deve exibir mensagem de erro &quot;Required&quot; para o campo &quot;Password&quot;">
+    </testcase>
+    <testcase name="Validação de campos obrigatórios  Deve exibir mensagem de erro &quot;Passwords do not match&quot; para o campo &quot;Confirm Password&quot;" time="4.771" classname="Deve exibir mensagem de erro &quot;Passwords do not match&quot; para o campo &quot;Confirm Password&quot;">
+    </testcase>
+  </testsuite>
+</testsuites>

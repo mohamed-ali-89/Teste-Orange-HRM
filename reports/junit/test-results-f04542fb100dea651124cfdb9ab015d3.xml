@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="13.559" tests="3" failures="0">
+  <testsuite name="Root Suite" timestamp="2025-12-17T10:42:42" tests="0" file="cypress\e2e\orange-hrm\Assertions.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Testes de Assertivas" timestamp="2025-12-17T10:42:42" tests="3" time="13.553" failures="0">
+    <testcase name="Testes de Assertivas Assertivas implícitas" time="2.803" classname="Assertivas implícitas">
+    </testcase>
+    <testcase name="Testes de Assertivas Assertivas explícitas" time="2.951" classname="Assertivas explícitas">
+    </testcase>
+    <testcase name="Testes de Assertivas Assertivas explícitas - Login bem-sucedido" time="2.594" classname="Assertivas explícitas - Login bem-sucedido">
+    </testcase>
+  </testsuite>
+</testsuites>

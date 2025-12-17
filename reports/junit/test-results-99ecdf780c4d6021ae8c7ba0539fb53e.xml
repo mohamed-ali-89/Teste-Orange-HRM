@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="17.431" tests="5" failures="0">
+  <testsuite name="Root Suite" timestamp="2025-12-17T10:43:34" tests="0" file="cypress\e2e\orange-hrm\login..cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Funcionalidade: Login" timestamp="2025-12-17T10:43:34" tests="5" time="17.424" failures="0">
+    <testcase name="Funcionalidade: Login Deve fazer login com sucesso" time="3.444" classname="Deve fazer login com sucesso">
+    </testcase>
+    <testcase name="Funcionalidade: Login Não Deve Fazer Login - Usuário Nulo" time="1.247" classname="Não Deve Fazer Login - Usuário Nulo">
+    </testcase>
+    <testcase name="Funcionalidade: Login Não Deve Fazer Login - Senha Nula" time="1.194" classname="Não Deve Fazer Login - Senha Nula">
+    </testcase>
+    <testcase name="Funcionalidade: Login Não Deve Fazer Login - Nome de Usuário Inválido" time="2.303" classname="Não Deve Fazer Login - Nome de Usuário Inválido">
+    </testcase>
+    <testcase name="Funcionalidade: Login Deve permitir redefinir senha" time="2.395" classname="Deve permitir redefinir senha">
+    </testcase>
+  </testsuite>
+</testsuites>
