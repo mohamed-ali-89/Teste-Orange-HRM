@@ -1,7 +1,7 @@
 services:
   squash-tm:
     image: squash-tm-image
-    container_name:SQUASH_TM: squash-tm
+    container_name: squash-tm
     ports:
       - "8080:8080"
     networks:
