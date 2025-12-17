@@ -1,0 +1,22 @@
+services:
+  squash-tm:
+    image: squash-tm-image
+    container_name:SQUASH_TM: squash-tm
+    ports:
+      - "8080:8080"
+    networks:
+      - app-net
+
+  orchestrator:
+    image: orchestrator-image
+    container_name: orchestrator
+    ports:
+      - "8081:8080"
+    depends_on:
+      - squash-tm
+    networks:
+      - app-net
+
+networks:
+  app-net:
+    driver: bridge
