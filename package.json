@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "test:cypress": "cypress run",
-    "AUTH-001": "cypress run --spec cypress/e2e/AUTH/AUTH-001.cy.js"
+    "AUTH-001": "cypress run --spec cypress/e2e/AUTH/AUTH-001.cy.js",
+    "login-test": "cypress run --spec cypress/e2e/orange-hrm/login..cy.js"
   },
   "keywords": [],
   "author": "",
