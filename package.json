@@ -1,11 +1,12 @@
 {
-  "name": "Teste-Orange-HRM",
+  "name": "teste-orange-hrm",
   "version": "1.0.0",
   "description": " No contexto específico do OrangeHRM, a automação de testes pode ser utilizada para validar a funcionalidade do sistema em diferentes cenários, como login de usuário, gestão de perfis, gestão de folha de pagamento, entre outros.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "test:cypress": "cypress run"
+    "test:cypress": "cypress run",
+    "AUTH-001": "cypress run --spec cypress/e2e/AUTH/AUTH-001.cy.js"
   },
   "keywords": [],
   "author": "",
